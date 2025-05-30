@@ -36,22 +36,26 @@ export default function Navbar() {
         </button>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex space-x-4">
+        <div className="hidden md:flex space-x-4 items-center">
+          <div>
           <Link to="/map" className="hover:bg-gray-700 px-3 py-2 rounded">Map View</Link>
           <Link to="/chargerlist" className="hover:bg-gray-700 px-3 py-2 rounded">Charger List</Link>
           <Link to="/addcharger" className="hover:bg-gray-700 px-3 py-2 rounded">Add Charger</Link>
+          </div>
+          <div>
           {isLoggedIn ? (
-            <button onClick={handleLogout} className="hover:bg-gray-700 px-3 py-2 rounded">Logout</button>
+            <button onClick={handleLogout} className="hover:bg-gray-400 bg-white text-black px-4 py-2 rounded-3xl">Logout</button>
           ) : (
-            <Link to="/login" className="hover:bg-gray-700 px-3 py-2 rounded">Login</Link>
+            <Link to="/login" className="hover:bg-gray-400 px-3 bg-white text-black py-2 px-4  rounded-3xl">Login</Link>
           )}
+          </div>
         </div>
       </div>
 
       {/* Mobile nav */}
       {menuOpen && (
         <div className="mt-4 flex flex-col md:hidden space-y-2">
-          <Link to="/map" className="hover:bg-gray-700 px-3 py-2 rounded" onClick={() => setMenuOpen(false)}>Map View</Link>
+          <Link to="/" className="hover:bg-gray-700 px-3 py-2 rounded" onClick={() => setMenuOpen(false)}>Map View</Link>
           <Link to="/chargerlist" className="hover:bg-gray-700 px-3 py-2 rounded" onClick={() => setMenuOpen(false)}>Charger List</Link>
           <Link to="/addcharger" className="hover:bg-gray-700 px-3 py-2 rounded" onClick={() => setMenuOpen(false)}>Add Charger</Link>
           {isLoggedIn ? (

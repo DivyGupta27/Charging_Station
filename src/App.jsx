@@ -19,10 +19,10 @@ function App() {
       <Routes>
         {/* <Route path="/chargerlist" element={<ChargerList/>} /> */}
         {/* <Route path="/addcharger" element={<AddCharger/>} /> */}
-        <Route path="/" element={<Login/>} />
+        <Route path="/" element={<MapView/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/register" element={<Register/>} />
-        <Route path="/map" element={<PrivateRoute><MapView /></PrivateRoute>} />
+        <Route path="/map" element={<MapView />} />
         <Route path="/chargerlist" element={<PrivateRoute><ChargerList /></PrivateRoute>}/>
         <Route path="/addcharger" element={<PrivateRoute><AddCharger /></PrivateRoute>}/>
       </Routes>
