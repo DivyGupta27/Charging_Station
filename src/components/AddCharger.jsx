@@ -36,7 +36,7 @@ const AddCharger = () => {
     };
 
     try {
-      const res = await fetch('http://localhost:8000/api/chargers/addcharger', {
+      const res = await fetch('https://charging-station-mssh.onrender.com/api/chargers/addcharger', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

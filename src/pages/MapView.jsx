@@ -20,7 +20,7 @@ const MapView = () => {
   });
 
   useEffect(() => {
-    fetch('http://localhost:8000/api/chargers/getcharger')
+    fetch('https://charging-station-mssh.onrender.com/api/chargers/getcharger')
       .then((res) => res.json())
       .then((data) => setChargers(data))
       .catch((err) => console.error('Map data fetch error:', err));

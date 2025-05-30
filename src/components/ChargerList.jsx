@@ -7,7 +7,7 @@ const ChargerList = () => {
 
   // Fetch chargers
   const fetchChargers = () => {
-    fetch('http://localhost:8000/api/chargers/getcharger')
+    fetch('https://charging-station-mssh.onrender.com/api/chargers/getcharger')
       .then((res) => res.json())
       .then((data) => setChargers(data))
       .catch((err) => console.error('Error:', err));
@@ -37,7 +37,7 @@ const ChargerList = () => {
   // Save edits
   const saveEdit = async (id) => {
     try {
-      await fetch(`http://localhost:8000/api/chargers/${id}`, {
+      await fetch(`https://charging-station-mssh.onrender.com/api/chargers/${id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(editData),
@@ -53,7 +53,7 @@ const ChargerList = () => {
   const deleteCharger = async (id) => {
     if (window.confirm('Are you sure you want to delete this charger?')) {
       try {
-        await fetch(`http://localhost:8000/api/chargers/${id}`, {
+        await fetch(`https://charging-station-mssh.onrender.com/api/chargers/${id}`, {
           method: 'DELETE',
         });
         fetchChargers();
