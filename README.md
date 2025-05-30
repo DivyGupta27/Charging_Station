@@ -1,12 +1,48 @@
-# React + Vite
+# ⚡ EV Charging Station Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a full-stack MERN (MongoDB, Express, React, Node.js) web application for managing EV charging stations. Users can view charger listings, add new chargers, visualize them on a map, and perform edit/delete operations.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- ✅ User authentication (JWT-based)
+- ✅ Add, update, and delete EV chargers
+- ✅ Google Maps integration to display charger locations
+- ✅ Filtering by status, power output, connector type
+- ✅ Responsive design (Tailwind CSS)
+- ✅ Toast notifications and protected routes
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🖼️ Live Demo
+
+> Deploy frontend and backend on Render/Vercel, then add links here:
+
+- 🌐 Frontend: [https://divy-charging-station.netlify.app/]
+- 🔌 Backend: [https://charging-station-mssh.onrender.com]
+
+---
+
+## 📦 Tech Stack
+
+| Technology   | Description            |
+|--------------|------------------------|
+| React        | Frontend UI            |
+| Tailwind CSS | Styling                |
+| Node.js      | Backend runtime        |
+| Express      | REST API server        |
+| MongoDB      | Database               |
+| Google Maps  | Map & Marker display   |
+
+---
+
+## 🛠️ Project Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/ev-charger-app.git
+frontend: npm i 
+backend :cd backend;npm i ;cd..
+frontend :npm run start
