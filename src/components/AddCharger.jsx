@@ -66,11 +66,11 @@ const AddCharger = () => {
       <div className="mt-10 pt-6">
         <h2 className="text-xl font-semibold mb-4">➕ Add New Charger</h2>
         {message && <div className="mb-4 text-sm text-blue-600">{message}</div>}
-        <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-          <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Name" className="border p-2 rounded" required />
-          <input type="text" name="lat" value={formData.lat} onChange={handleChange} placeholder="Latitude" className="border p-2 rounded" required />
-          <input type="text" name="lng" value={formData.lng} onChange={handleChange} placeholder="Longitude" className="border p-2 rounded" required />
-          <input type="number" name="powerOutput" value={formData.powerOutput} onChange={handleChange} placeholder="Power Output (kW)" className="border p-2 rounded" required />
+        <form onSubmit={handleSubmit} className="grid grid-cols-1  md:grid-cols-2 gap-4 mb-4">
+          <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Name" className="border p-2 rounded placeholder-gray-600" required />
+          <input type="text" name="lat" value={formData.lat} onChange={handleChange} placeholder="Latitude" className="border p-2 rounded placeholder-gray-600" required />
+          <input type="text" name="lng" value={formData.lng} onChange={handleChange} placeholder="Longitude" className="border p-2 rounded placeholder-gray-600" required />
+          <input type="number" name="powerOutput" value={formData.powerOutput} onChange={handleChange} placeholder="Power Output (kW)" className="border p-2 rounded placeholder-gray-600" required />
           <select name="connectorType" value={formData.connectorType} onChange={handleChange} className="border p-2 rounded" required>
             <option value="">Select Connector Type</option>
             <option value="Type1">Type 1</option>
